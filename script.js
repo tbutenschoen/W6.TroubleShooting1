@@ -39,7 +39,7 @@ const toggleOscillator = function () {
     oscillator.type = document.getElementById("waveform").value; // Set waveform type
     oscillator.frequency.value = 440; // Default frequency (A4)
     oscillator.connect(gainNode); // Connect oscillator to gain
-    oscillator.start; // Start the oscillator
+    oscillator.start(); // Start the oscillator
     isPlaying = true;
     document.getElementById("toggle").textContent = "Stop"; // Update button text
   }
