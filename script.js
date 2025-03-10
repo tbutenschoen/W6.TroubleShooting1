@@ -70,10 +70,8 @@ const updateGain = function (event) {
  * The waveform type only updates if the oscillator is currently playing.
  * @param {Event} event - The change event from the waveform dropdown.
  */
-const updateWaveform = function (event) {
-  if (isPlaying) {
-    oscillator.type = event.target.value; // Change oscillator waveform
-  }
+const updateWaveform = function () {
+  oscillator.type = event.target.value; // Change oscillator waveform
 };
 
 /**
